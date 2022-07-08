@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rpmbuild:
+    image: rpmbuild/centos7
+    volumes:
+      - ./teste:/tmp/teste
+    command: ./tmp/teste/executa.sh
